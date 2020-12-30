@@ -204,6 +204,7 @@
     }
 
     void space_contract::restart(){
+	require_auth(_self);
 
         space_env_singleton _env(get_self(), get_self().value);
 
